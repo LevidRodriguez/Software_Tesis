@@ -1,0 +1,4 @@
+Imagen	Imagen_1-1.png	-90
+Imagen	Imagen_1-2.png	-90
+Imagen	Imagen_1-3.png	-90
+Imagen	Imagen_11.png	-88
