@@ -4,14 +4,13 @@ clear all
 clc
 %% Cargar Datos
 %% Desplazamiento 
-[ID, Ideal,Real,Error, Desp] = textread('files/ErrorPromedio.txt','%d %d %d %d %d');
-% %% Angulo Positivos
+% [ID, Ideal,Real,Error, Desp] = textread('files/ErrorPromedio.txt','%d %d %d %d %d');
+%% Angulo Positivos
 % [ID, Ideal,Real,Error] = textread('files/ErrorPromedioGradosPos.txt','%d %d %d %d');
 %% Angulo Negativos
 % [ID, Ideal,Real,Error] = textread('files/ErrorPromedioGradosNeg.txt','%d %d %d %d');
 %% Angulo All
 % [ID, Ideal,Real,Error] = textread('files/ErrorPromedioGrados.txt','%d %d %d %d');
-
 %% Ecuacion  
 P_Ideal = polyfit(ID,Ideal, 1);
 p_Ideal = polyval(P_Ideal, ID);

@@ -1,10 +1,10 @@
-function GraficaLineasHoug(P,img,img_binary,T,R)    
-    figure;
-    x = T(P(:,2)); y = R(P(:,1));
-    plot(x,y,'s','color','white');
+function GraficaLineasHoug(P,img,BW,T,R)    
+%     figure;
+%     x = T(P(:,2)); y = R(P(:,1));
+%     plot(x,y,'s','color','white');
     % Find lines and plot them
-    lines = houghlines(img_binary,T,R,P,'FillGap',5,'MinLength',7);
-    figure, imshow(img), hold on
+    lines = houghlines(BW,T,R,P,'FillGap',5,'MinLength',7);
+    figure, imshow(img), hold on;
     max_len = 0;
     for k = 1:length(lines)
        xy = [lines(k).point1; lines(k).point2];
@@ -23,5 +23,6 @@ function GraficaLineasHoug(P,img,img_binary,T,R)
     end
 
     % highlight the longest line segment
-    plot(xy_long(:,1),xy_long(:,2),'LineWidth',7,'Color','blue');
+    plot(xy_long(:,1),xy_long(:,2),'LineWidth',2,'Color','blue');
+    hold off;
 end
