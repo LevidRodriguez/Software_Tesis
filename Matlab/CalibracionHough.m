@@ -30,12 +30,13 @@ for i = 1: length(name_directory)
     axis on, axis normal, hold on;
     
     P  = houghpeaks(H,5,'threshold',ceil(0.3*max(H(:))));
-    P = SelectCorrectLine(P);
+%     P = SelectCorrectLine(P);
+%     r= find(P(:,1)>1000 & P(:,2)>100);
+%     P(r,:)=[]
     x = T(P(:,2)); y = R(P(:,1));
     Pxy=[y',x'];
     plot(x,y,'s','color', 'red');
-%     [j,k] = min(P);
-    GraficaLineasHoug(P,img, BW,T,R);
+    GraficaLineasHoug(P(:,:),img, BW,T,R);
     % Calcular su angulo(de Hough) de la linea que nos interesa
     fprintf(file,'%s\n',file_name);
     fprintf('Imagen: %s \n',file_name);
