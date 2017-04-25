@@ -59,7 +59,7 @@ for i = 1: length(name_directory)
     %% Elegir las lineas cercanas de 83  a 90 y de -83 a -90
     P = SelectCorrectLine(P);
     %% Maximo Local
-    P = FindMaximoLocal(H_Original, P)
+    P = FindMaximoLocal(H_Original, P);
     % GraficaLineasHoug(P,img, img_binary,T,R);
     % Calcular su angulo(de Hough) de la linea que nos interesa
     angulo = P(:,2)-91;
