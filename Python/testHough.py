@@ -5,12 +5,7 @@
     Maestria en Robotica - UTM
     last checking 21 de Abril de 2017
 """
-import numpy as np
-import cv2
-from skimage.transform import (hough_line, hough_line_peaks,
-                               probabilistic_hough_line)
-import matplotlib.pyplot as plt
-from matplotlib import cm
+
 
 
 def main():
