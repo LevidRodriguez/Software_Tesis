@@ -28,10 +28,10 @@ for i = 1: length(name_directory)
     %% Calculo del Histograma
     img_histogram = imhist(img_gray);
     hold on;
-    plot(img_histogram);
-    title('\fontsize{25}Histograma');
-    %grid on
-    grid minor
+    % plot(img_histogram);
+    % title('\fontsize{25}Histograma');
+    % grid on
+    % grid minor
     %% Elimina paredes o Eliminacion de Ruido  
     img_binary = 1-(((img_gray-200)*255)/255);
     %                           ^ Ubralizacion a partir de la forma del
@@ -43,10 +43,10 @@ for i = 1: length(name_directory)
     %% Determinacion de contornos en la Imagen mediante el Gradiente (1)
     % Gradiente = ContoursDetection(img_binary, 1);
     Gradiente = ContoursDetection(img_binary, 5);
-    %figure; imshow(Gradiente,[]);
+    % figure; imshow(Gradiente,[]);
     %% Determinar la Transformada de Hough y Deteccion de Lineas
     [H, T, R] = hough(Gradiente);
-    %figure; imshow(H,[]);
+    % figure; imshow(H,[]);
     H_Original = H;
     H = floor(log10(H+1));
     H = floor(exp(H));

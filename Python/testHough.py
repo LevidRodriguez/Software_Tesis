@@ -18,11 +18,11 @@ def main():
     print "OpenCV Version: " + cv2.__version__
     # Lee imagen
     img = cv2.imread("../ImagenesTest/Imagen14.png", 0)
-    # Conversion a escala de grices
-    gray = img  # cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    # con Conversion a escala de grices
+    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     # Umbraliza la Imagen
     [ret, imgth] = cv2.threshold(gray, 200, 255, cv2.THRESH_BINARY)
-    # Deteccion de Bordes
+    # Deteccion de Bordes con el Algoritmo de Canny
     edges = cv2.Canny(imgth, 150, 200, apertureSize=3)
 
     lines = cv2.HoughLines(edges, 1, np.pi / 180, 100)
@@ -44,8 +44,7 @@ def main():
 
     # Trasformada de Hough
     [h, theta, d] = hough_line(edges)
-    print "d: "
-    print d
+    print "h: ", h
     # Grafica la Deteccion de lineas en el espacio de Hough
     plt.figure(1)
     plt.imshow(np.log(1 + h),
