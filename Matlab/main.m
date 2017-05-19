@@ -27,7 +27,6 @@ for i = 1: length(name_directory)
     end
     %% Calculo del Histograma
     img_histogram = imhist(img_gray);
-    hold on;
     % plot(img_histogram);
     % title('\fontsize{25}Histograma');
     % grid on
@@ -44,20 +43,25 @@ for i = 1: length(name_directory)
     % Gradiente = ContoursDetection(img_binary, 1);
     Gradiente = ContoursDetection(img_binary, 5);
     % figure; imshow(Gradiente,[]);
-    %% Determinar la Transformada de Hough y Deteccion de Lineas
+    %% Determinar la Transformada de Hough
     [H, T, R] = hough(Gradiente);
-    % figure; imshow(H,[]);
+    
     H_Original = H;
     H = floor(log10(H+1));
     H = floor(exp(H));
-    figure; imshow(H,[]);
+    figure; imshow(H,[],'XData', T,'YData',R,'InitialMagnification','fit');
+    xlabel('\theta'); ylabel('\rho');
+    axis on, axis normal, hold on;
+     %% Deteccion de Lineas
     Px  = houghpeaks(H,5,'threshold',ceil(0.3*max(H(:))));
-    % GraficaLineasHoug(Px,img, img_binary,T,R);
+    x = T(Px(:,2)); y = R(Px(:,1));
+    Pxy=[y',x'];
+    plot(x,y,'s','color', 'red');
     %% Localizacion de la linea de mayor longitud 
     P = FindLineMaxLength(H);
     P2 = P;
     %% Elegir las lineas cercanas de 83  a 90 y de -83 a -90
-    P = SelectCorrectLine(P);
+    P = SelectCorrectLine(P)
     %% Maximo Local
     P = FindMaximoLocal(H_Original, P);
     % GraficaLineasHoug(P,img, img_binary,T,R);
@@ -66,7 +70,12 @@ for i = 1: length(name_directory)
     % Tabular angulo vs angulo del robot vs Nombre de la imagen
     numImg = strsplit(file_name,'_');
     fprintf(file,'%s\t%s\t%d\n',numImg{1},file_name,angulo);
-    GraficaLineasHoug(P,img_gray, img_binary,T,R);
+    
+    x = T(P(:,2)); y = R(P(:,1));
+    Pxy=[y',x']
+    plot(x,y,'s','color', 'g'); 
+    
+    GraficaLineasHoug(P,img, img_binary,T,R);
     fprintf('Imagen: %s Angulo: %d Grados...Procesada\n',file_name,angulo);
     %% Realizar el Seguimiento de un grupo de pixeles 
     

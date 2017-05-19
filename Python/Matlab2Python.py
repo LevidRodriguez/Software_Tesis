@@ -23,7 +23,8 @@ def main():
     P = FindLineMaxLength(np.asmatrix(H))
     # Determinacion del angulo real del robot
     # angulo = P[:, 2] - 91
-    print "H: ", H , "P: " , P
+    print("H: ", H_Original, H_Original.shape)
+    print("P: ", P, P.shape)
     pass
 
 if __name__ == '__main__':

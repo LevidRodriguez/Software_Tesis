@@ -1,6 +1,43 @@
 """Archivo My_Python_Defs"""
 import numpy as np
 import cv2
+import matplotlib.pyplot as plt
+from matplotlib import cm
+from skimage.transform import (hough_line_peaks)
+from pathlib2 import Path
+
+
+def grafHough(img, h, theta, d, T, R):
+    plt.figure(1)
+    plt.imshow(np.log(1 + h),
+               extent=[np.rad2deg(theta[0]), np.rad2deg(theta[-1]), d[-1], d[0]],
+               cmap=cm.gray, aspect=1 / 1.5)
+    plt.plot(np.rad2deg(T), R, 'or', markersize=5)
+
+    plt.xlabel('Angulos (grados)')
+    plt.ylabel('Distancia (pixels)')
+    plt.title('Transformada de Hough')
+
+    # Grafica la Deteccion de lineas en el espacio imagen
+    plt.figure(2)
+    plt.imshow(img, cmap=cm.gray)
+    print("Linea - Angulo - Distancia ")
+    i = 0
+    for _, angle, dist in zip(*hough_line_peaks(h, theta, d)):
+        print(i, np.ceil(np.rad2deg(angle)), np.floor(dist))
+        y0 = (dist - 0 * np.cos(angle)) / np.sin(angle)
+        y1 = (dist - img.shape[1] * np.cos(angle)) / np.sin(angle)
+        plt.plot((0, img.shape[1]), (y0, y1), '-r')
+        i += 1
+    plt.xlim((0, img.shape[1]))
+    plt.ylim((img.shape[0], 0))
+    plt.title('Lineas Detectadas')
+
+    # plt.figure(3)
+
+    # Mostramos las imagenes
+    plt.show()
+    pass
 
 
 def FindLineMaxLength(Matrix):
@@ -61,3 +98,15 @@ def toc():
         print "Elapsed time is " + str(time.time() - startTime_for_tictoc) + " seconds."
     else:
         print "Toc: start time not set"
+
+
+def ls(ruta=Path.cwd()):
+    """ Retorna una lista con todos los archivos y directorios 
+        en un fichero especificado o nulo si es el directorio actual 
+        lista = ls(path) # no especificar path para tomar el directorio actual
+        lista = lista de nombres de los archivos y directorios 
+                encontrados en la direccion path
+        path = direccion de donde se quiere conocer el listado de archivos y directorios
+        """
+    return [arch.name for arch in Path(ruta).iterdir() if arch.is_file()]
+    pass

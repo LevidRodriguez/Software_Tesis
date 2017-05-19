@@ -1,7 +1,8 @@
 function P_Ok = SelectCorrectLine(P)
     % Elegir las lineas cercanas de 83  a 90 y de -83 a -90
-    % Si esta en -90 y la distancia  800 Eliminar superior
-    % Si esta en -90 y la distancia  321 Eliminar inferior
+    % Si esta en -90 y la distancia  800 Elimina superior
+    % Si esta en -90 y la distancia  321 Elimina inferior
+    
     % Eliminacion del borde superior 
     r= find(P(:,1)==800 & P(:,2)==1);
     P(r,:)=[];
