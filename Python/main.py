@@ -41,6 +41,8 @@ def main():
     # Grafica la Deteccion de lineas en el espacio de Hough
     # grafHough(img, h, theta, d, np.deg2rad(T[T_index]), R[T_index])
     Tx = T[T_index]
+    error = Tx-90 if Tx > 0 else 90+Tx
+    print "Error: ", error
     # print len(Tx)
     # plt.figure(3)
     plt.imshow(img, cmap=cm.gray)

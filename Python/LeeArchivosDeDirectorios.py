@@ -1,27 +1,19 @@
 #!/usr/bin/python
 # encoding: latin1
-from pathlib2 import Path
-import os
+from My_Python_Defs import *
+
 
 def main():
     print "Lee los archivos de un directorio en particular"
     path = '../ImagenesTest/'
-    lst_files_png = []
-    lst = ls(path)
+    lst_files_png = ls2(path, "png")
 
-    for lst_files in lst:
-        (file_name, file_extension) = os.path.splitext(lst_files)
-        if file_extension == ".png":
-            lst_files_png.append(file_name+file_extension)
-            # print(file_name+file_extension)
-            pass
+    for im in lst_files_png:
+        print "Imagen: ", im
+        img = cv2.imread(path + im)
+        cv2.imshow("Imagen - "+im, img)
+        cv2.waitKey(0)
         pass
-    print lst_files_png
-    pass
-
-
-def ls(ruta = Path.cwd()):
-    return [arch.name for arch in Path(ruta).iterdir() if arch.is_file()]
     pass
 
 

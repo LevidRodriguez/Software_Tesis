@@ -2,9 +2,11 @@
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
+import os
 from matplotlib import cm
 from skimage.transform import (hough_line_peaks)
 from pathlib2 import Path
+
 
 
 def grafHough(img, h, theta, d, T, R):
@@ -110,3 +112,17 @@ def ls(ruta=Path.cwd()):
         """
     return [arch.name for arch in Path(ruta).iterdir() if arch.is_file()]
     pass
+
+
+def ls2(path, type_file):
+    list_files = ls(path)
+    list_find_files = []
+    for lst_files in list_files:
+        (file_name, file_extension) = os.path.splitext(lst_files)
+        if file_extension == "."+type_file:
+            list_find_files.append(file_name + file_extension)
+            pass
+        pass
+    return list_find_files
+    pass
+
