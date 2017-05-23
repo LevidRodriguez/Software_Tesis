@@ -41,6 +41,22 @@ def grafHough(img, h, theta, d, T, R):
     plt.show()
     pass
 
+def linesImgOrig(img, T, R):
+    plt.figure(2)
+    plt.imshow(img, cmap=cm.gray)
+    for i in range(len(T)):
+        angle = np.deg2rad(T[i])
+        dist = R[i]
+        y0 = (dist - 0 * np.cos(angle)) / np.sin(angle)
+        y1 = (dist - img.shape[1] * np.cos(angle)) / np.sin(angle)
+        plt.plot((0, img.shape[1]), (y0, y1), '-r')
+        pass
+    plt.xlim((0, img.shape[1]))
+    plt.ylim((img.shape[0], 0))
+    plt.title('Lineas Detectadas')
+    plt.show()
+    pass
+
 
 def FindLineMaxLength(Matrix):
     """Funcion para determinar las coordenadas de el Valor"""

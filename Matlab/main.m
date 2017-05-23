@@ -2,6 +2,7 @@
 clear all;  %   limpia variabels
 close all;  %   cierra todas las ventanas abiertas 
 clc;        %   Limpia la consola
+tic;
 %%  Abrir Directorio de las Imagenes
 % address = '../Software_Tesis_Python/ImgsNAO1G/';
 address = '../ImagenesTest/';
@@ -75,10 +76,11 @@ for i = 1: length(name_directory)
     Pxy=[y',x']
     plot(x,y,'s','color', 'g'); 
     
-    GraficaLineasHoug(P,img, img_binary,T,R);
+    GraficaLineasHoug(P,img_gray, img_binary,T,R);
     fprintf('Imagen: %s Angulo: %d Grados...Procesada\n',file_name,angulo);
     %% Realizar el Seguimiento de un grupo de pixeles 
     
 end
 fclose(file);
 hold off
+toc;
