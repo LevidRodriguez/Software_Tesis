@@ -50,6 +50,7 @@ for i = 1: length(name_directory)
     H_Original = H;
     H = floor(log10(H+1));
     H = floor(exp(H));
+    
     figure; imshow(H,[],'XData', T,'YData',R,'InitialMagnification','fit');
     xlabel('\theta'); ylabel('\rho');
     axis on, axis normal, hold on;
@@ -59,12 +60,12 @@ for i = 1: length(name_directory)
     Pxy=[y',x'];
     plot(x,y,'s','color', 'red');
     %% Localizacion de la linea de mayor longitud 
-    P = FindLineMaxLength(H);
+    P = FindLineMaxLength(H)
     P2 = P;
     %% Elegir las lineas cercanas de 83  a 90 y de -83 a -90
     P = SelectCorrectLine(P)
     %% Maximo Local
-    P = FindMaximoLocal(H_Original, P);
+    P = FindMaximoLocal(H_Original, P)
     % GraficaLineasHoug(P,img, img_binary,T,R);
     % Calcular su angulo(de Hough) de la linea que nos interesa
     angulo = P(:,2)-91;

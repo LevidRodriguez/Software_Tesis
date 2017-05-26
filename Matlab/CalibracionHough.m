@@ -6,7 +6,7 @@ clc;        %   Limpia la consola
 address = '../ImagenesTest/';
 name_directory = dir(strcat(address,'*.png'));
 %% Archivo para guardar datos
-file  = fopen('bloque_test.txt','w');
+file  = fopen('bloque_testXXXX.txt','w');
 %% Procesamiento de todas las imagenes en el directorio 
 for i = 1: length(name_directory)
     file_name = name_directory(i).name;
