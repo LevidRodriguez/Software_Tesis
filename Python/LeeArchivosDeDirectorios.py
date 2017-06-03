@@ -4,8 +4,8 @@ from My_Python_Defs import *
 
 
 def main():
-    print "Lee los archivos de un directorio en particular"
     path = '../ImagenesTest/'
+    print "Lee los archivos del directorio path: ", path
     lst_files_png = ls2(path, "png")
 
     for im in lst_files_png:

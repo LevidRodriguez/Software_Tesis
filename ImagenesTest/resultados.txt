@@ -1,0 +1,4 @@
+138	138_CameraDown_40.0.png	[-85.]	[ 249.]	[ 5.]
+139	139_CameraDown_41.0.png	[]	[]	[]
+140	140_CameraDown_42.0.png	[]	[]	[]
+141	141_CameraDown_43.0.png	[-84.]	[ 256.]	[ 6.]

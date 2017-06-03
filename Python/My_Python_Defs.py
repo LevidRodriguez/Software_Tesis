@@ -42,7 +42,7 @@ def grafHough(img, h, theta, d, T, R):
     pass
 
 def linesImgOrig(img, T, R):
-    plt.figure(2)
+    plt.figure()
     plt.imshow(img, cmap=cm.gray)
     for i in range(len(T)):
         angle = np.deg2rad(T[i])
@@ -56,7 +56,6 @@ def linesImgOrig(img, T, R):
     plt.title('Lineas Detectadas')
     plt.show()
     pass
-
 
 def FindLineMaxLength(Matrix):
     """Funcion para determinar las coordenadas de el Valor"""
@@ -77,7 +76,6 @@ def FindLineMaxLength(Matrix):
     # Regresamos el Arreglo con las coordenadas
     return np.asmatrix(P)
     pass
-
 
 def convolve(image, kernel):
     """Funcion para determinar la convolucionar una imagen con la mascaras kernel"""
@@ -102,13 +100,11 @@ def convolve(image, kernel):
     return outimage
     pass
 
-
 def tic():
     # Homemade version of matlab tic and toc functions
     import time
     global startTime_for_tictoc
     startTime_for_tictoc = time.time()
-
 
 def toc():
     import time
@@ -116,7 +112,6 @@ def toc():
         print "Elapsed time is " + str(time.time() - startTime_for_tictoc) + " seconds."
     else:
         print "Toc: start time not set"
-
 
 def ls(ruta=Path.cwd()):
     """ Retorna una lista con todos los archivos y directorios 
@@ -128,7 +123,6 @@ def ls(ruta=Path.cwd()):
         """
     return [arch.name for arch in Path(ruta).iterdir() if arch.is_file()]
     pass
-
 
 def ls2(path, type_file):
     list_files = ls(path)

@@ -5,10 +5,11 @@ clc;        %   Limpia la consola
 tic;
 %%  Abrir Directorio de las Imagenes
 % address = '../Software_Tesis_Python/ImgsNAO1G/';
-address = '../ImagenesTest/';
+address = '../ImagenesTest/0.6m-c-grd/';
 name_directory = dir(strcat(address,'*.png'));
 %% Archivo para guardar datos
-file  = fopen('bloque_test.txt','w');
+f = 'resultados_Matlab.txt';
+file  = fopen(strcat(address,f),'w');
 %% Procesamiento de todas las imagenes en el directorio 
 for i = 1: length(name_directory)
     file_name = name_directory(i).name;
@@ -51,37 +52,37 @@ for i = 1: length(name_directory)
     H = floor(log10(H+1));
     H = floor(exp(H));
     
-    figure; imshow(H,[],'XData', T,'YData',R,'InitialMagnification','fit');
-    xlabel('\theta'); ylabel('\rho');
-    axis on, axis normal, hold on;
+%     figure; imshow(H,[],'XData', T,'YData',R,'InitialMagnification','fit');
+%     xlabel('\theta'); ylabel('\rho');
+%     axis on, axis normal, hold on;
      %% Deteccion de Lineas
     Px  = houghpeaks(H,5,'threshold',ceil(0.3*max(H(:))));
     x = T(Px(:,2)); y = R(Px(:,1));
     Pxy=[y',x'];
-    plot(x,y,'s','color', 'red');
+%     plot(x,y,'s','color', 'red');
     %% Localizacion de la linea de mayor longitud 
-    P = FindLineMaxLength(H)
+    P = FindLineMaxLength(H);
     P2 = P;
     %% Elegir las lineas cercanas de 83  a 90 y de -83 a -90
-    P = SelectCorrectLine(P)
+    P = SelectCorrectLine(P);
     %% Maximo Local
-    P = FindMaximoLocal(H_Original, P)
+    P = FindMaximoLocal(H_Original, P);
     % GraficaLineasHoug(P,img, img_binary,T,R);
     % Calcular su angulo(de Hough) de la linea que nos interesa
     angulo = P(:,2)-91;
     % Tabular angulo vs angulo del robot vs Nombre de la imagen
     numImg = strsplit(file_name,'_');
-    fprintf(file,'%s\t%s\t%d\n',numImg{1},file_name,angulo);
+    fprintf(file,'%s\t%s\t%d\t%d\n',numImg{1},file_name,angulo,R(P(:,1)));
     
     x = T(P(:,2)); y = R(P(:,1));
-    Pxy=[y',x']
-    plot(x,y,'s','color', 'g'); 
+    Pxy=[y',x'];
+%     plot(x,y,'s','color', 'g'); 
     
-    GraficaLineasHoug(P,img_gray, img_binary,T,R);
-    fprintf('Imagen: %s Angulo: %d Grados...Procesada\n',file_name,angulo);
+%     GraficaLineasHoug(P,img_gray, img_binary,T,R);
+    fprintf('Imagen: %s Angulo: %d Grados Distancia: %d ...Procesada\n',file_name,angulo,R(P(:,1)));
     %% Realizar el Seguimiento de un grupo de pixeles 
     
 end
 fclose(file);
-hold off
+% hold off
 toc;

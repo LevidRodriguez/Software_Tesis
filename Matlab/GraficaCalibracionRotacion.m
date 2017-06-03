@@ -163,14 +163,14 @@ P211 = 1.8*A2 - 160; % Promedio de coeficientes de Polinomios
 P212 = 1.1765*A2 - 113.8521; % Polinomio de nube de puntos
 
 plot(A1,P111,'-k','LineWidth',2,'markersize',10);
-plot(A1,P112,'-r','LineWidth',2,'markersize',10);
+% plot(A1,P112,'-r','LineWidth',2,'markersize',10);
 % plot(A1,P121,'-r','LineWidth',2,'markersize',10);
 % plot(A1,P122,'-r','LineWidth',2,'markersize',10);
 % plot(A1,P131,'-b','LineWidth',2,'markersize',10);
 % plot(A1,P132,'-b','LineWidth',2,'markersize',10);
 
 plot(A2,P211,'-k','LineWidth',2,'markersize',10);
-plot(A2,P212,'-r','LineWidth',2,'markersize',10);
+% plot(A2,P212,'-r','LineWidth',2,'markersize',10);
 % plot(A2,P221,'-r','LineWidth',2,'markersize',10);
 % plot(A2,P222,'-r','LineWidth',2,'markersize',10);
 % plot(A2,P231,'-b','LineWidth',2,'markersize',10);
