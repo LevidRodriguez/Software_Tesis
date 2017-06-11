@@ -8,7 +8,7 @@ tic;
 address = '../ImagenesTest/0.6m-c-grd/';
 name_directory = dir(strcat(address,'*.png'));
 %% Archivo para guardar datos
-f = 'resultados_Matlab.txt';
+f = 'resultados_MatlabX.txt';
 file  = fopen(strcat(address,f),'w');
 %% Procesamiento de todas las imagenes en el directorio 
 for i = 1: length(name_directory)

@@ -11,8 +11,8 @@ def main():
     # Incia cuenta del tiempo
     tic()
     # leemos imagen ImgsNAO1G/, 0.5m-c-grd/ 1m-c-grd/ 1m-c-grd-half35cm/
-    path = "../ImagenesTest/1m-c-grd-half35cm/"
-    file = open(path + "resultados.txt", "w")
+    path = "../ImagenesTest/50cm-c-grd/"
+    file = open(path + "resultadosX.txt", "w")
     lst_files = ls2(path, "png")
     for im in lst_files:
         print ">>>imagen: ", im
@@ -47,7 +47,8 @@ def main():
         R_Ok = R[T_index]
         ImgNum = im.split('_', 1)
         error = T_Ok - 90 if T_Ok > 0 else 90 + T_Ok
-        print ImgNum[0], "\t", im, " Angulo: ", T_Ok, "Rho: ", R_Ok, "Error: ",error
+        D_real = (0.0003 * np.power(R_Ok, 2)) - (0.325 * R_Ok) + 100.0675
+        print ImgNum[0], "\t", im, " Angulo: ", T_Ok, "Rho: ", R_Ok, "Dist: ", D_real ,"Error: ",error
         # Determinar Ubicacion del robot
         # Determinar Rotacion
         """if (T_Ok > -90) & (T_Ok < 0):
@@ -69,9 +70,9 @@ def main():
         print "Distancia ABC: ", ABC, "Distancia Real[cm]:", D_real, "a un Angulo Alpha Real: ", alpha_real,"\n"
         """
         try:
-            file.write(str(ImgNum[0])+"\t" + im + "\t"+str(T_Ok[0])+"\t"+str(R_Ok[0])+"\t"+str(error[0])+"\n")
+            file.write(str(ImgNum[0])+"\t" + im + "\t"+str(T_Ok[0])+"\t"+str(R_Ok[0])+"\t"+ str(D_real) + "\t" +str(error[0])+"\n")
         except:
-            file.write(str(ImgNum[0]) + "\t" + im + "\t" + str(T_Ok) + "\t" + str(R_Ok) + "\t" + str(error) + "\n")
+            file.write(str(ImgNum[0]) + "\t" + im + "\t" + str(T_Ok) + "\t" + str(R_Ok) + "\t" + str(D_real) + "\t" + str(error) + "\n")
         # linesImgOrig(img, T_Ok, R_Ok)
         pass
     file.close()
