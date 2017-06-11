@@ -87,7 +87,7 @@ XY_neg=[XY_neg;X(1:halfX,:),Y(1:halfX,:)];
 % 
 %% 60cm
 [Y, X] = textread('files/CalibracionPromedio8_60.txt','%d %d');
-plot(X,Y,'.','LineWidth',2,'markersize',10);
+plot(X,Y,'','LineWidth',2,'markersize',10);
 
 halfX=ceil(length(X)/2);
 % P_60 = polyfit(X(halfX:length(X),:),Y(halfX:length(X),:), orden)
