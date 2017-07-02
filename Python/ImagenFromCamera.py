@@ -75,7 +75,7 @@ def ImagenCaptureContinus(IP, PORT):
 
 def ImageFromCamera(IP, PORT,FileName, Index):
     camProxy = ALProxy("ALVideoDevice", IP, PORT)
-    resolution = 2  # VGA
+    resolution = 1  # VGA, 0:160x120, 1:320x240, 2:640x480, 3:1280x960
     colorSpace = 11 # RGB
     camProxy.openCamera(Index)
     videoClient = camProxy.subscribeCamera("python_client", Index, resolution, colorSpace, 5)

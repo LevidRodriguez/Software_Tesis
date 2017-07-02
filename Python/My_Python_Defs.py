@@ -8,7 +8,6 @@ from skimage.transform import (hough_line_peaks)
 from pathlib2 import Path
 
 
-
 def grafHough(img, h, theta, d, T, R):
     plt.figure(1)
     plt.imshow(np.log(1 + h),
@@ -41,6 +40,7 @@ def grafHough(img, h, theta, d, T, R):
     plt.show()
     pass
 
+
 def linesImgOrig(img, T, R):
     plt.figure()
     plt.imshow(img, cmap=cm.gray)
@@ -49,13 +49,14 @@ def linesImgOrig(img, T, R):
         dist = R[i]
         y0 = (dist - 0 * np.cos(angle)) / np.sin(angle)
         y1 = (dist - img.shape[1] * np.cos(angle)) / np.sin(angle)
-        plt.plot((0, img.shape[1]), (y0, y1), '-r')
+        plt.plot((0, img.shape[1]), (y0, y1), '-b')
         pass
     plt.xlim((0, img.shape[1]))
     plt.ylim((img.shape[0], 0))
     plt.title('Lineas Detectadas')
     plt.show()
     pass
+
 
 def FindLineMaxLength(Matrix):
     """Funcion para determinar las coordenadas de el Valor"""
@@ -76,6 +77,7 @@ def FindLineMaxLength(Matrix):
     # Regresamos el Arreglo con las coordenadas
     return np.asmatrix(P)
     pass
+
 
 def convolve(image, kernel):
     """Funcion para determinar la convolucionar una imagen con la mascaras kernel"""
@@ -100,11 +102,13 @@ def convolve(image, kernel):
     return outimage
     pass
 
+
 def tic():
     # Homemade version of matlab tic and toc functions
     import time
     global startTime_for_tictoc
     startTime_for_tictoc = time.time()
+
 
 def toc():
     import time
@@ -112,6 +116,7 @@ def toc():
         print "Elapsed time is " + str(time.time() - startTime_for_tictoc) + " seconds."
     else:
         print "Toc: start time not set"
+
 
 def ls(ruta=Path.cwd()):
     """ Retorna una lista con todos los archivos y directorios 
@@ -124,15 +129,81 @@ def ls(ruta=Path.cwd()):
     return [arch.name for arch in Path(ruta).iterdir() if arch.is_file()]
     pass
 
+
 def ls2(path, type_file):
     list_files = ls(path)
     list_find_files = []
     for lst_files in list_files:
         (file_name, file_extension) = os.path.splitext(lst_files)
-        if file_extension == "."+type_file:
+        if file_extension == "." + type_file:
             list_find_files.append(file_name + file_extension)
             pass
         pass
     return list_find_files
     pass
 
+
+def defProyectiva(img, a):
+    print "Entramos..."
+    inv_a = np.linalg.inv(a)
+    sy, sx = img.shape
+    print type(img)
+    img = np.double(img)
+    print type(img)
+
+    im2 = np.zeros((sy, sx))
+    xc = (sx / 2) + 0.5
+    yc = (sy / 2) + 0.5
+    tic()
+    for j in range(sy):
+        for i in range(sx):
+            x = i - xc
+            y = yc - j
+            xyz = np.array([[x], [y], [1]])
+            uvw = np.dot(inv_a, xyz)
+            xi = np.int(uvw[0] / uvw[2])
+            yi = np.int(uvw[1] / uvw[2])
+            xo = np.int(xi + xc)
+            yo = np.int(yc - yi)
+            xa = np.int(np.floor(xo))
+            xb = np.int(np.ceil(xo))
+            ya = np.int(np.floor(yo))
+            yb = np.int(np.ceil(yo))
+
+            Dxa = np.int(xo - xa)
+            Dxb = np.int(xb - xo)
+            Dya = np.int(yo - ya)
+            Dyb = np.int(yb - yo)
+
+            A11 = np.int(Dxa * Dya)
+            A12 = np.int(Dxb * Dya)
+            A21 = np.int(Dxa * Dyb)
+            A22 = np.int(Dxb * Dyb)
+            if (xo >= 0) & (xo <= sx) & (yo >= 0) & (yo <= sy):
+                if (Dxa == 0) & (Dya == 0):
+                    try:
+                        im2[j][i] = img[yo][xo]
+                    except:
+                        break
+                    pass
+                elif (Dxa == 0) & (Dya != 0):
+                    im2[j][i] = (img[ya][xo] * Dyb) + (img[yb][xo] * Dya)
+                    pass
+                elif (Dxa != 0) & (Dya == 0):
+                    im2[j][i] = (img[yo][xa] * Dyb) + (img[yo][xb] * Dya)
+                    pass
+                else:
+                    try:
+                        im2[j][i] = (img[ya][xa] * A22) + (img[ya][xb] * A21) + (img[yb][xa] * A12) + (
+                            img[yb][xb] * A11)
+                    except:
+                        break
+                    pass
+                pass
+            pass
+        pass
+    toc()
+    print "Valor de i: ", i, "j: ", j
+    print "... Salimos\n", type(im2)
+    return im2
+    pass

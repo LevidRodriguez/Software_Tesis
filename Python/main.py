@@ -8,20 +8,16 @@ import math
 
 
 def main():
-    # Incia cuenta del tiempo
-    tic()
+    tic()  # start time
     # leemos imagen ImgsNAO1G/, 0.5m-c-grd/ 1m-c-grd/ 1m-c-grd-half35cm/
-    path = "../ImagenesTest/50cm-c-grd/"
-    file = open(path + "resultadosX.txt", "w")
+    path = "../ImagenesTest/ImgsNAO1grd-160x120PlusIlumination/"
+    file = open(path + "resultadosX23.txt", "w")
     lst_files = ls2(path, "png")
     for im in lst_files:
         print ">>>imagen: ", im
         img = cv2.imread(path + im)
         # conversion de la imagene en niveles de grices
         Gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-        # plt.figure()
-        # plt.title('Imagen en Escala de Grices')
-        # plt.imshow(Gray, cmap=cm.gray)
         N = img.shape[1] / 2
         # umbraliza la imagen
         [ret, imgth] = cv2.threshold(Gray, 200, 255, cv2.THRESH_BINARY)
@@ -36,6 +32,7 @@ def main():
         T = np.asarray(np.ceil(np.rad2deg(T)))
         R = np.asarray(np.ceil(R))
         T_index = np.where(T.__abs__() == T.__abs__().max())[0]
+        linesImgOrig(img, T, R)
         # T_index = np.nonzero(((T >= 45) & (T <= 90)) | ((T >= -90) & (T <= -45)))
         # T_index = np.nonzero(((T >= 83) & (T <= 90)) | ((T >= -90) & (T <= -83)))
         # T_index = np.nonzero(((T >= 83) & (T < 90)) | ((T > 70) & (T <= 80)) | ((T > 10) & (T <= 20)))
@@ -48,7 +45,7 @@ def main():
         ImgNum = im.split('_', 1)
         error = T_Ok - 90 if T_Ok > 0 else 90 + T_Ok
         D_real = (0.0003 * np.power(R_Ok, 2)) - (0.325 * R_Ok) + 100.0675
-        print ImgNum[0], "\t", im, " Angulo: ", T_Ok, "Rho: ", R_Ok, "Dist: ", D_real ,"Error: ",error
+        print ImgNum[0], "\t", im, " Angulo: ", T_Ok, "Rho: ", R_Ok, "Dist: ", D_real, "Error: ", error
         # Determinar Ubicacion del robot
         # Determinar Rotacion
         """if (T_Ok > -90) & (T_Ok < 0):
@@ -70,14 +67,16 @@ def main():
         print "Distancia ABC: ", ABC, "Distancia Real[cm]:", D_real, "a un Angulo Alpha Real: ", alpha_real,"\n"
         """
         try:
-            file.write(str(ImgNum[0])+"\t" + im + "\t"+str(T_Ok[0])+"\t"+str(R_Ok[0])+"\t"+ str(D_real) + "\t" +str(error[0])+"\n")
+            file.write(str(ImgNum[0]) + "\t" + im + "\t" + str(T_Ok[0]) + "\t" + str(R_Ok[0]) + "\t" + str(
+                D_real) + "\t" + str(error[0]) + "\n")
         except:
-            file.write(str(ImgNum[0]) + "\t" + im + "\t" + str(T_Ok) + "\t" + str(R_Ok) + "\t" + str(D_real) + "\t" + str(error) + "\n")
+            file.write(
+                str(ImgNum[0]) + "\t" + im + "\t" + str(T_Ok) + "\t" + str(R_Ok) + "\t" + str(D_real) + "\t" + str(
+                    error) + "\n")
         # linesImgOrig(img, T_Ok, R_Ok)
         pass
     file.close()
-    # Fin del tiempo
-    toc()
+    toc()  # finish time
 
     # Grafica la Deteccion de lineas en el espacio de Hough
     # grafHough(img, h, theta, d, np.deg2rad(T[T_index]), R[T_index])

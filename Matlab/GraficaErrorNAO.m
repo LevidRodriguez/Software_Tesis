@@ -5,13 +5,13 @@ clc
 %% Cargar Datos
 %% Desplazamiento Media: 46.333333,Moda: 0,Mediana: 46,Varianza: 997.75, 
 % Covarianza: 997.75, Desviacion Estandar: 31.587181
-% [ID, Ideal,Real,Error, Desp] = textread('files/ErrorPromedio.txt','%d %d %d %d %d');
+[ID, Ideal,Real,Error, Desp] = textread('files/ErrorPromedio.txt','%d %d %d %d %d');
 %% Angulo Positivos Media: 47.285714, Moda: 0,Mediana: 46 ,Varianza: 1153.904762
 % Covarianza: 1153.904762, Desviacion Estandar: 33.969174
 % [ID, Ideal,Real,Error] = textread('files/ErrorPromedioGradosPos.txt','%d %d %d %d');
 %% Angulo Negativos Media: -52.857143, Moda: -100, Mediana: -50
 % Varianza: 1306.809524, Covarianza: 1306.809524, Desviacion Estandar: 36.149821
-[ID, Ideal,Real,Error] = textread('files/ErrorPromedioGradosNeg.txt','%d %d %d %d');
+% [ID, Ideal,Real,Error] = textread('files/ErrorPromedioGradosNeg.txt','%d %d %d %d');
 %% Angulo All 
 % [ID, Ideal,Real,Error] = textread('files/ErrorPromedioGrados.txt','%d %d %d %d');
 %% Ecuacion  
@@ -49,14 +49,14 @@ ylim([-130 10])
 % xlim([-1 13])
 % ylim([-131 106])
 %% Desplazamientos
-% figure;
-% plot(Ideal, Desp,'or','LineWidth',2,'markersize',10,'markerfacecolor','r'); 
-% grid minor
-% title('Error en Desplazamiento', 'FontSize',20,'FontWeight','bold','Color','k')
-% xlabel('Distancia[cm]','FontSize',15,'FontWeight','bold','Color','k')
-% ylabel('Desplazamiento[cm]','FontSize',15,'FontWeight','bold','Color','k')
-% xlim([-5 100])
-% ylim([-1 10])
+figure;
+plot(Ideal, Desp,'or','LineWidth',2,'markersize',10,'markerfacecolor','r'); 
+grid minor
+title('Error en Desplazamiento', 'FontSize',20,'FontWeight','bold','Color','k')
+xlabel('Distancia[cm]','FontSize',15,'FontWeight','bold','Color','k')
+ylabel('Desplazamiento[cm]','FontSize',15,'FontWeight','bold','Color','k')
+xlim([-5 100])
+ylim([-1 10])
 
 % y =ax+b
 %% Desplazamientos

@@ -1,0 +1,3 @@
+linea1.png	linea1.png	90.0	230.0	[ 41.1875]	0.0
+linea2.png	linea2.png	68.0	390.0	[ 18.9475]	-22.0
+linea3.png	linea3.png	-51.0	-48.0	[ 116.3587]	39.0
