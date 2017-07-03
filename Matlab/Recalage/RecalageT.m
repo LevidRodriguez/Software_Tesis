@@ -36,6 +36,7 @@ function [ A, Dcx, Dcy,Y,X] = RecalageT(imgReferencia, img2Transform)
     NumeroIteracion=0;
     while fin1~=1 | fin2~=1
         NumeroIteracion=NumeroIteracion+1;
+        % ....................................................................1
         if NumeroIteracion==1
             % Calculo del factor de reducci?n para la primera iteraci?n
             [zy,zx]=size(im1);
@@ -120,7 +121,7 @@ function [ A, Dcx, Dcy,Y,X] = RecalageT(imgReferencia, img2Transform)
         IM2b=fun_circshiftea(IM2, DYi, DYs, DeltaDY, DXi, DXs, DeltaDX);
         
         SD=fun_SD_(IM1, IM2b);
-        W = woods(IM1, IM2b);
+        W = woods(IM1, IM2b); %%% Nuevo
        
         % [c Ic]=min(SD);
         [c Ic]=min(W);

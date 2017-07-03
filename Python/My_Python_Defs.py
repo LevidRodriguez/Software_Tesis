@@ -207,3 +207,45 @@ def defProyectiva(img, a):
     print "... Salimos\n", type(im2)
     return im2
     pass
+
+
+def filtroPasaBajas(img, r):
+    sy, sx = img.shape
+    csx = sx / 2
+    csy = sy / 2
+    W = np.zeros((sy, sx))
+    cx = csx + 1 if sx % 2 == 0 else csx + 0.5
+    cy = csy + 1 if sy % 2 == 0 else csy + 0.5
+    for i in range(sx):
+        for j in range(sy):
+            x = i - cx
+            y = j - cy
+            a = (sx * r) / 2
+            b = (sy * r) / 2
+            if ((x / a) ** 2) + ((y / b) ** 2) <= 1:
+                W[j][i] = 1
+                pass
+            pass
+        pass
+    F = np.fft.fftshift(np.fft.fft2(img))
+    Ff = F * W
+    return np.fft.ifft2(np.fft.ifftshift(Ff))
+    pass
+
+
+def reduceImagen(img, factor_reduccion):
+    TamInY, TamInX = img.shape
+
+    TamFinX = np.floor(TamInX * factor_reduccion)
+    TamFinY = np.floor(TamInY * factor_reduccion)
+
+    quita_en_x = np.floor((TamInX - TamFinX) / 2)
+    quita_en_y = np.floor((TamInY - TamFinY) / 2)
+    IM = np.fft.fftshift(np.fft.fft2(img))
+
+    IM2 = IM[quita_en_y: TamInY - quita_en_y, quita_en_x: TamInX - quita_en_x]
+
+    im2 = np.fft.ifft2(np.fft.ifftshift(IM2))
+    im2 = im2.real
+    return im2
+    pass

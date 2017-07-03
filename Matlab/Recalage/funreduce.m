@@ -1,5 +1,5 @@
 function [im2] = fun_reduce(im, factor_reduccion)
-% Unicamente las hace mas pequeñas
+% Unicamente las hace mas peque?as
 
 
 % clear all;
@@ -8,7 +8,7 @@ function [im2] = fun_reduce(im, factor_reduccion)
 % 
 % factor_reduccion=0.01;
 % 
-% im=imread('E:\RML\Investigación_mx\reales2\cc16.bmp');
+% im=imread('E:\RML\Investigaci?n_mx\reales2\cc16.bmp');
 
 
 im=double(im);
@@ -26,8 +26,8 @@ IM2=IM(quita_en_y+1:TamInY-quita_en_y, quita_en_x+1:TamInX-quita_en_x);
 % figure; imshow(log(abs(IM2)),[]);
 im2=ifft2(ifftshift(IM2));
 im2=(real(im2));
-m=min(im2); m=min(m);
-M=max(im2); M=max(M);
+m=min(im2);m=min(m);
+M=max(im2);M=max(M);
 im2=(im2-m)*(255/(M-m));
 im2=uint8(im2);
 % figure; imshow(im2);

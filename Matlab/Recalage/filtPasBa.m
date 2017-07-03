@@ -1,6 +1,6 @@
 function [imf] = filtroPasaBajas(im,r)
-
-% Esta función filtra (en el dominio de la frecuencia) una imagen de tamaño
+fprintf('Mi Filt');
+% Esta funci?n filtra (en el dominio de la frecuencia) una imagen de tama?o
 % MxN en donde M y N pueden o no ser numeros pares. La mascara H(jw) la
 % centra con respecto a la componente de CD del espectro de la imagen
 %      N

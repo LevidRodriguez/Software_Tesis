@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad6b9891-96e9-41ba-bbfa-bafc08b67751" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Recalage/HomographyTest.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Recalage/Imgs2Recalage/TESTHOMOGRAPHY.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Recalage/NewDefProyectiva.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Recalage/fun_DeformarConProyectiva.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Matlab/GraficaErrorNAO.m" afterPath="$PROJECT_DIR$/../Matlab/GraficaErrorNAO.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Matlab/H_X_exacto.txt" afterPath="$PROJECT_DIR$/../Matlab/H_X_exacto.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Recalage/Imgs2Recalage/filtPasBaj.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Matlab/Recalage/RecalageT.m" afterPath="$PROJECT_DIR$/../Matlab/Recalage/RecalageT.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Matlab/Recalage/filtPasBa.m" afterPath="$PROJECT_DIR$/../Matlab/Recalage/filtPasBa.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Matlab/Recalage/main.m" afterPath="$PROJECT_DIR$/../Matlab/Recalage/main.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ImagenFromCamera.py" afterPath="$PROJECT_DIR$/ImagenFromCamera.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/My_Python_Defs.py" afterPath="$PROJECT_DIR$/My_Python_Defs.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Recalage/HomographyTest.py" afterPath="$PROJECT_DIR$/Recalage/HomographyTest.py" />
     </list>
     <ignored path="Python.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,8 +33,8 @@
           <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/main.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="39" column="17" lean-forward="true" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+                <state relative-caret-position="311">
+                  <caret line="45" column="52" lean-forward="false" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
                   <folding>
                     <element signature="e#37#65#0" expanded="true" />
                     <element signature="e#1333#1408#0" expanded="false" />
@@ -47,11 +44,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="HomographyTest.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="HomographyTest.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Recalage/HomographyTest.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="77">
-                  <caret line="23" column="12" lean-forward="true" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+                <state relative-caret-position="119">
+                  <caret line="42" column="43" lean-forward="false" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
                   <folding>
                     <element signature="e#0#28#0" expanded="true" />
                   </folding>
@@ -59,13 +56,23 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="NewDefProyectiva.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Recalage/NewDefProyectiva.py">
+          <file leaf-file-name="My_Python_Defs.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/My_Python_Defs.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
-                  <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+                <state relative-caret-position="328">
+                  <caret line="245" column="56" lean-forward="true" selection-start-line="245" selection-start-column="56" selection-end-line="245" selection-end-column="56" />
                   <folding>
-                    <element signature="e#0#18#0" expanded="true" />
+                    <element signature="e#29#47#0" expanded="true" />
+                    <element signature="e#247#1230#0" expanded="false" />
+                    <element signature="e#1161#1176#0" expanded="false" />
+                    <element signature="e#1742#2259#0" expanded="false" />
+                    <element signature="e#2295#3103#0" expanded="false" />
+                    <element signature="e#3121#3258#0" expanded="false" />
+                    <element signature="e#3276#3470#0" expanded="false" />
+                    <element signature="e#3502#4007#0" expanded="false" />
+                    <element signature="e#4040#4360#0" expanded="false" />
+                    <element signature="e#4394#6372#0" expanded="false" />
+                    <element signature="e#6408#6981#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -85,33 +92,12 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="My_Python_Defs.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/My_Python_Defs.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="413">
-                  <caret line="172" column="19" lean-forward="false" selection-start-line="172" selection-start-column="19" selection-end-line="172" selection-end-column="19" />
-                  <folding>
-                    <element signature="e#29#47#0" expanded="true" />
-                    <element signature="e#247#1230#0" expanded="false" />
-                    <element signature="e#1161#1176#0" expanded="false" />
-                    <element signature="e#1742#2259#0" expanded="false" />
-                    <element signature="e#2295#3103#0" expanded="false" />
-                    <element signature="e#3121#3258#0" expanded="false" />
-                    <element signature="e#3276#3470#0" expanded="false" />
-                    <element signature="e#3502#4007#0" expanded="false" />
-                    <element signature="e#4040#4360#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="ImagenFromCamera.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/ImagenFromCamera.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+                <state relative-caret-position="60">
+                  <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
                   <folding>
-                    <element signature="e#22#43#0" expanded="true" />
                     <element signature="e#202#1112#1" expanded="false" />
                     <element signature="e#1186#2262#0" expanded="false" />
                     <element signature="e#2315#3143#0" expanded="false" />
@@ -120,13 +106,13 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="fun_DeformarConProyectiva.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Recalage/fun_DeformarConProyectiva.py">
+          <file leaf-file-name="filtPasBaj.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Recalage/Imgs2Recalage/filtPasBaj.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="775">
-                  <caret line="58" column="8" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="58" selection-end-column="8" />
+                <state relative-caret-position="60">
+                  <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
                   <folding>
-                    <element signature="e#0#28#0" expanded="true" />
+                    <element signature="e#0#18#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -167,6 +153,7 @@
         <option value="$PROJECT_DIR$/Recalage/fun_DeformarConProyectiva.py" />
         <option value="$PROJECT_DIR$/Recalage/NewDefProyectiva.py" />
         <option value="$PROJECT_DIR$/Recalage/HomographyTest.py" />
+        <option value="$PROJECT_DIR$/Recalage/Imgs2Recalage/filtPasBaj.py" />
         <option value="$PROJECT_DIR$/My_Python_Defs.py" />
       </list>
     </option>
@@ -219,8 +206,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -494,13 +481,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.112277865" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.115508884" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32802126" sideWeight="0.503125" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2369863" sideWeight="0.496875" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2369863" sideWeight="0.496875" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20136987" sideWeight="0.496875" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49863014" sideWeight="0.496875" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.496875" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39863014" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -553,13 +541,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/LeeArchivosDeDirectorios.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/examples.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -609,6 +590,8 @@
             <element signature="e#3276#3470#0" expanded="false" />
             <element signature="e#3502#4007#0" expanded="false" />
             <element signature="e#4040#4360#0" expanded="false" />
+            <element signature="e#4394#6372#0" expanded="false" />
+            <element signature="e#6408#6981#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -654,6 +637,8 @@
             <element signature="e#3276#3470#0" expanded="false" />
             <element signature="e#3502#4007#0" expanded="false" />
             <element signature="e#4040#4360#0" expanded="false" />
+            <element signature="e#4394#6372#0" expanded="false" />
+            <element signature="e#6408#6981#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -866,43 +851,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Recalage/fun_DeformarConProyectiva.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="58" column="8" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="58" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Recalage/NewDefProyectiva.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ImagenFromCamera.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-          <folding>
-            <element signature="e#22#43#0" expanded="true" />
-            <element signature="e#202#1112#1" expanded="false" />
-            <element signature="e#1186#2262#0" expanded="false" />
-            <element signature="e#2315#3143#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Recalage/fun_DeformarConProyectiva.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="775">
-          <caret line="58" column="8" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="58" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="39" column="17" lean-forward="true" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+        <state relative-caret-position="311">
+          <caret line="45" column="52" lean-forward="false" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
           <folding>
             <element signature="e#37#65#0" expanded="true" />
             <element signature="e#1333#1408#0" expanded="false" />
@@ -913,8 +879,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Recalage/HomographyTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="23" column="12" lean-forward="true" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+        <state relative-caret-position="119">
+          <caret line="42" column="43" lean-forward="false" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -923,8 +889,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/My_Python_Defs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="172" column="19" lean-forward="false" selection-start-line="172" selection-start-column="19" selection-end-line="172" selection-end-column="19" />
+        <state relative-caret-position="328">
+          <caret line="245" column="56" lean-forward="true" selection-start-line="245" selection-start-column="56" selection-end-line="245" selection-end-column="56" />
           <folding>
             <element signature="e#29#47#0" expanded="true" />
             <element signature="e#247#1230#0" expanded="false" />
@@ -935,6 +901,30 @@
             <element signature="e#3276#3470#0" expanded="false" />
             <element signature="e#3502#4007#0" expanded="false" />
             <element signature="e#4040#4360#0" expanded="false" />
+            <element signature="e#4394#6372#0" expanded="false" />
+            <element signature="e#6408#6981#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ImagenFromCamera.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="e#202#1112#1" expanded="false" />
+            <element signature="e#1186#2262#0" expanded="false" />
+            <element signature="e#2315#3143#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Recalage/Imgs2Recalage/filtPasBaj.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
