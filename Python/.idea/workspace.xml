@@ -2,12 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad6b9891-96e9-41ba-bbfa-bafc08b67751" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Recalage/Imgs2Recalage/filtPasBaj.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Matlab/Recalage/RecalageT.m" afterPath="$PROJECT_DIR$/../Matlab/Recalage/RecalageT.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Matlab/Recalage/filtPasBa.m" afterPath="$PROJECT_DIR$/../Matlab/Recalage/filtPasBa.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RoboCup/My_Python_Defs.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RoboCup/example.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RoboCup/main.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RoboCup/trackerball.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../ImagenesTest/Recalage/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ImageCapture3.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ImagenFromCamera.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Matlab2Python.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/My_Python_Defs.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/main.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plot_line_hough_transform.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Matlab/Recalage/main.m" afterPath="$PROJECT_DIR$/../Matlab/Recalage/main.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/My_Python_Defs.py" afterPath="$PROJECT_DIR$/My_Python_Defs.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Recalage/HomographyTest.py" afterPath="$PROJECT_DIR$/Recalage/HomographyTest.py" />
     </list>
     <ignored path="Python.iws" />
@@ -27,62 +34,14 @@
     <favorites_list name="Python" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.50080776">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/main.py">
+          <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Hough/main.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="311">
-                  <caret line="45" column="52" lean-forward="false" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
-                  <folding>
-                    <element signature="e#37#65#0" expanded="true" />
-                    <element signature="e#1333#1408#0" expanded="false" />
-                    <element signature="e#2135#3047#1" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="HomographyTest.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Recalage/HomographyTest.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="42" column="43" lean-forward="false" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
-                  <folding>
-                    <element signature="e#0#28#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="My_Python_Defs.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/My_Python_Defs.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="328">
-                  <caret line="245" column="56" lean-forward="true" selection-start-line="245" selection-start-column="56" selection-end-line="245" selection-end-column="56" />
-                  <folding>
-                    <element signature="e#29#47#0" expanded="true" />
-                    <element signature="e#247#1230#0" expanded="false" />
-                    <element signature="e#1161#1176#0" expanded="false" />
-                    <element signature="e#1742#2259#0" expanded="false" />
-                    <element signature="e#2295#3103#0" expanded="false" />
-                    <element signature="e#3121#3258#0" expanded="false" />
-                    <element signature="e#3276#3470#0" expanded="false" />
-                    <element signature="e#3502#4007#0" expanded="false" />
-                    <element signature="e#4040#4360#0" expanded="false" />
-                    <element signature="e#4394#6372#0" expanded="false" />
-                    <element signature="e#6408#6981#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="examples.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/examples.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
-                  <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="19" />
+                <state relative-caret-position="-72">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -92,28 +51,24 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="ImagenFromCamera.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ImagenFromCamera.py">
+          <file leaf-file-name="ImageCapture3.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/RoboCup/ImageCapture3.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+                <state relative-caret-position="585">
+                  <caret line="39" column="20" lean-forward="false" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
                   <folding>
-                    <element signature="e#202#1112#1" expanded="false" />
-                    <element signature="e#1186#2262#0" expanded="false" />
-                    <element signature="e#2315#3143#0" expanded="false" />
+                    <element signature="e#0#21#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="filtPasBaj.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Recalage/Imgs2Recalage/filtPasBaj.py">
+          <file leaf-file-name="Matlab2Python.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Hough/Matlab2Python.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#0#18#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -148,13 +103,17 @@
         <option value="$PROJECT_DIR$/LeeArchivosDeDirectorios.py" />
         <option value="$PROJECT_DIR$/ImagenFromCamera.py" />
         <option value="$PROJECT_DIR$/Recalage/testHomography.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/Recalage/Imgs2Recalage/TESTHOMOGRAPHY.py" />
         <option value="$PROJECT_DIR$/Recalage/fun_DeformarConProyectiva.py" />
         <option value="$PROJECT_DIR$/Recalage/NewDefProyectiva.py" />
-        <option value="$PROJECT_DIR$/Recalage/HomographyTest.py" />
         <option value="$PROJECT_DIR$/Recalage/Imgs2Recalage/filtPasBaj.py" />
         <option value="$PROJECT_DIR$/My_Python_Defs.py" />
+        <option value="$PROJECT_DIR$/Recalage/HomographyTest.py" />
+        <option value="$PROJECT_DIR$/RoboCup/example.py" />
+        <option value="$PROJECT_DIR$/RoboCup/trackerball.py" />
+        <option value="$PROJECT_DIR$/RoboCup/ImageCapture3.py" />
+        <option value="$PROJECT_DIR$/RoboCup/main.py" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
@@ -178,6 +137,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -200,13 +160,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Recalage" />
+              <option name="myItemId" value="Hough" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -215,6 +174,11 @@
     <property name="settings.editor.selected.configurable" value="preferences.customizations" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/RoboCup" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -228,7 +192,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.HomographyTest">
+  <component name="RunManager" selected="Python.main (1)">
     <configuration default="false" name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -245,40 +209,6 @@
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="fun_DeformarConProyectiva" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Recalage" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Recalage/fun_DeformarConProyectiva.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Nosetests in testHomography.py" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Recalage" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Python" />
-      <option name="_new_regexPattern" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/Recalage/testHomography.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
     <configuration default="false" name="HomographyTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -299,19 +229,55 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="TESTHOMOGRAPHY" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="example" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Recalage/Imgs2Recalage" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RoboCup" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Recalage/Imgs2Recalage/TESTHOMOGRAPHY.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RoboCup/example.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RoboCup" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Python" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RoboCup/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="trackerball" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RoboCup" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Python" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RoboCup/trackerball.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -415,18 +381,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.main" />
-      <item index="1" class="java.lang.String" itemvalue="Python.fun_DeformarConProyectiva" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Nosetests in testHomography.py" />
-      <item index="3" class="java.lang.String" itemvalue="Python.HomographyTest" />
-      <item index="4" class="java.lang.String" itemvalue="Python.TESTHOMOGRAPHY" />
+      <item index="1" class="java.lang.String" itemvalue="Python.HomographyTest" />
+      <item index="2" class="java.lang.String" itemvalue="Python.example" />
+      <item index="3" class="java.lang.String" itemvalue="Python.main (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Python.trackerball" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.HomographyTest" />
-        <item index="1" class="java.lang.String" itemvalue="Python.main" />
-        <item index="2" class="java.lang.String" itemvalue="Python.TESTHOMOGRAPHY" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Nosetests in testHomography.py" />
-        <item index="4" class="java.lang.String" itemvalue="Python.fun_DeformarConProyectiva" />
+        <item index="0" class="java.lang.String" itemvalue="Python.main (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.trackerball" />
+        <item index="2" class="java.lang.String" itemvalue="Python.example" />
+        <item index="3" class="java.lang.String" itemvalue="Python.HomographyTest" />
+        <item index="4" class="java.lang.String" itemvalue="Python.main" />
       </list>
     </recent_temporary>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -483,10 +449,10 @@
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.115508884" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12358643" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32802126" sideWeight="0.503125" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2369863" sideWeight="0.496875" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2369863" sideWeight="0.496875" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49863014" sideWeight="0.496875" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -541,117 +507,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/examples.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="17" column="45" lean-forward="false" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
-          <folding>
-            <element signature="e#37#65#0" expanded="true" />
-            <element signature="e#1333#1408#0" expanded="false" />
-            <element signature="e#2135#3047#1" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Matlab2Python.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/My_Python_Defs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#29#47#0" expanded="true" />
-            <element signature="e#247#1230#0" expanded="false" />
-            <element signature="e#1161#1176#0" expanded="false" />
-            <element signature="e#1742#2259#0" expanded="false" />
-            <element signature="e#2295#3103#0" expanded="false" />
-            <element signature="e#3121#3258#0" expanded="false" />
-            <element signature="e#3276#3470#0" expanded="false" />
-            <element signature="e#3502#4007#0" expanded="false" />
-            <element signature="e#4040#4360#0" expanded="false" />
-            <element signature="e#4394#6372#0" expanded="false" />
-            <element signature="e#6408#6981#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="43" column="19" lean-forward="false" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
-          <folding>
-            <element signature="e#37#65#0" expanded="true" />
-            <element signature="e#1333#1408#0" expanded="false" />
-            <element signature="e#2135#3047#1" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Matlab2Python.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/My_Python_Defs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#29#47#0" expanded="true" />
-            <element signature="e#247#1230#0" expanded="false" />
-            <element signature="e#1161#1176#0" expanded="false" />
-            <element signature="e#1742#2259#0" expanded="false" />
-            <element signature="e#2295#3103#0" expanded="false" />
-            <element signature="e#3121#3258#0" expanded="false" />
-            <element signature="e#3276#3470#0" expanded="false" />
-            <element signature="e#3502#4007#0" expanded="false" />
-            <element signature="e#4040#4360#0" expanded="false" />
-            <element signature="e#4394#6372#0" expanded="false" />
-            <element signature="e#6408#6981#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#37#65#0" expanded="true" />
-            <element signature="e#1333#1408#0" expanded="false" />
-            <element signature="e#2135#3047#1" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -843,14 +702,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examples.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Recalage/fun_DeformarConProyectiva.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="870">
@@ -865,45 +716,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$USER_HOME$/anaconda/lib/python2.7/site-packages/matplotlib/pyplot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="45" column="52" lean-forward="false" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
-          <folding>
-            <element signature="e#37#65#0" expanded="true" />
-            <element signature="e#1333#1408#0" expanded="false" />
-            <element signature="e#2135#3047#1" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Recalage/HomographyTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="42" column="43" lean-forward="false" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/My_Python_Defs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="245" column="56" lean-forward="true" selection-start-line="245" selection-start-column="56" selection-end-line="245" selection-end-column="56" />
-          <folding>
-            <element signature="e#29#47#0" expanded="true" />
-            <element signature="e#247#1230#0" expanded="false" />
-            <element signature="e#1161#1176#0" expanded="false" />
-            <element signature="e#1742#2259#0" expanded="false" />
-            <element signature="e#2295#3103#0" expanded="false" />
-            <element signature="e#3121#3258#0" expanded="false" />
-            <element signature="e#3276#3470#0" expanded="false" />
-            <element signature="e#3502#4007#0" expanded="false" />
-            <element signature="e#4040#4360#0" expanded="false" />
-            <element signature="e#4394#6372#0" expanded="false" />
-            <element signature="e#6408#6981#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -911,11 +727,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#202#1112#1" expanded="false" />
-            <element signature="e#1186#2262#0" expanded="false" />
-            <element signature="e#2315#3143#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -923,9 +734,102 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RoboCup/trackerball.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="24" lean-forward="false" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/My_Python_Defs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Recalage/HomographyTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="35" lean-forward="false" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RoboCup/example.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RoboCup/My_Python_Defs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RoboCup/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="19" column="31" lean-forward="false" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#37#65#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="18" column="33" lean-forward="false" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RoboCup/ImagenFromCamera.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="60" column="33" lean-forward="false" selection-start-line="60" selection-start-column="12" selection-end-line="60" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hough/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-72">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RoboCup/ImageCapture3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="20" lean-forward="false" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hough/Matlab2Python.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

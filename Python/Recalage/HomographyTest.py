@@ -10,8 +10,8 @@ from matplotlib import cm
 
 def main():
     # Read the images to be aligned
-    im1 = cv2.imread("Imgs2Recalage/girasol.bmp")
-    im2 = cv2.imread("Imgs2Recalage/girasoln.bmp")
+    im1 = cv2.imread("Imgs2Recalage/0.png")
+    im2 = cv2.imread("Imgs2Recalage/1.png")
 
     # Convert images to grayscale
     im1_gray = cv2.cvtColor(im1, cv2.COLOR_BGR2GRAY)
@@ -36,7 +36,7 @@ def main():
 
     print type(H2)
 
-    # img2 = defProyectiva(im1_gray, H2)
+    img2 = defProyectiva(im1_gray, H2)
     # img3 = filtroPasaBajas(im1_gray, 0.05) -> blur
     blur = cv2.blur(im1_gray, (3, 3))
 
@@ -44,10 +44,10 @@ def main():
     ty,tx = im1_gray.shape
     print im1_gray.shape
     print imReducida.shape
+    # plt.figure()
+    # plt.imshow(im1_gray, cmap=cm.gray)
     plt.figure()
-    plt.imshow(im1_gray, cmap=cm.gray)
-    plt.figure()
-    plt.imshow(imReducida, cmap=cm.gray)
+    plt.imshow(img2, cmap=cm.gray)
     # plt.figure()
     # plt.imshow(blur, cmap=cm.gray)
     plt.show()

@@ -49,7 +49,7 @@ def linesImgOrig(img, T, R):
         dist = R[i]
         y0 = (dist - 0 * np.cos(angle)) / np.sin(angle)
         y1 = (dist - img.shape[1] * np.cos(angle)) / np.sin(angle)
-        plt.plot((0, img.shape[1]), (y0, y1), '-b')
+        plt.plot((0, img.shape[1]), (y0, y1), '-r')
         pass
     plt.xlim((0, img.shape[1]))
     plt.ylim((img.shape[0], 0))

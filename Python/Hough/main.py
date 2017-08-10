@@ -10,13 +10,13 @@ import math
 def main():
     tic()  # start time
     # leemos imagen ImgsNAO1G/, 0.5m-c-grd/ 1m-c-grd/ 1m-c-grd-half35cm/
-    path = "../ImagenesTest/ImgsNAO1grd-160x120PlusIlumination/"
+    path = "../ImagenesTest/"
     file = open(path + "resultadosX23.txt", "w")
-    lst_files = ls2(path, "png")
+    lst_files = ls2(path, "JPG")
     for im in lst_files:
         print ">>>imagen: ", im
         img = cv2.imread(path + im)
-        # conversion de la imagene en niveles de grices
+        # conversion de la imagen en niveles de grices
         Gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
         N = img.shape[1] / 2
         # umbraliza la imagen
